@@ -1,0 +1,17 @@
+{
+    "name": "LDR Read It Later",
+    "version": "1.0",
+    "description": "Replace LDR its own pin function to Read It Later.",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "js": [ "content.js" ],
+            "run_at": "document_end",
+            "matches": [ "http://reader.livedoor.com/reader/*" ]
+        }
+    ]
+}
